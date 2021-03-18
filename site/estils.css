@@ -1,0 +1,9 @@
+body{
+color: purple;
+background-color: darkgray;
+}
+
+div:nth-child(odd)
+{
+    background-color: white;
+}
