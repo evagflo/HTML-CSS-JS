@@ -17,6 +17,7 @@
   </head>
   <body>
       <header>
+<!-- HEADER-->
           <nav id="header-nav" class="navbar navbar-default">
               <div class="container">
                 <div class="navbar-header">
@@ -65,8 +66,80 @@
               </div>
           </nav>
       </header>
+
+      <div id="call-btn" class="visible-xs">
+        <a href="tel:410-602-5008">
+            <span class="glyphicon glyphicon-earphone">410-602-5008</span>
+        </a> 
+      </div>
+      <div id="xs-deliver" class="text-center visible-xs">
+          * We Deliver
+      </div>
+
+<!-- BODY-->
+
+      <div id="main-content" class="container">
+        <div class="jumbotron">
+         <img src="images/jumbotron_768.jpg" alt="picture of restaurant"
+         class="img-responsive visible-xs">
+        </div>
+        <div id="home-tiles" class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="menu-category.html">
+                    <div id="menu-tile">
+                        <span>MENU</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="single-category.html">
+                    <div id="specials-tile">
+                        <span>SPECIALS</span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <a href="https://goo.gl/maps/3WCmPxJk8gBPiZ246" target="_blank">
+                    <div id="map-tile">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23911.949363417567!2d2.294208093721489!3d41.482736928832395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4b0b8ebcf1ae1%3A0xa7b059f68934eeef!2s08320%20El%20Masnou%2C%20Barcelona!5e0!3m2!1sca!2ses!4v1616415130287!5m2!1sca!2ses" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <span>MAP</span>
+                    </div>
+                </a>
+            </div>
+        </div><!-- end of #home-tiles-->
+      </div><!-- end of #main-content-->
+<!-- FOOTER-->
+    <footer class="panel-footer">
+        <div class="container">
+            <div clas="row">
+                <section id="hours" class="col-sm-4">
+                    <span>Hours:</span><br>
+                    Sun-Thurs: 11:15am - 10:00pm<br>
+                    Fri:  11:15am - 2:30pm<br>
+                    Saturday closed
+                    <hr class="visible-xs">
+                </section>
+                <section id="address" class="col-sm-4">
+                    <span>Address:</span><br>
+                    7105 XXX Road<br>
+                    Baltimore, Md 21215
+                    <p>* Delivery within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+                    <hr class="visible-xs">
+                </section>
+                <section id="testimonials" class="col-sm-4">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum iaculis nulla, at laoreet nulla vulputate eu. Nam vitae justo eu nunc tempor commodo."</p>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vestibulum iaculis nulla, at laoreet nulla vulputate eu. Nam vitae justo eu nunc tempor commodo."</p>
+                </section>
+            </div>
+            <div class="text-center">&copy; Copyright Eva Gonzalez Flo 2021</div>
+        </div>
+    </footer>
     
 
+
+<!-- closing taps-->
       <script src="js/jquery-2.1.4.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/script.js"></script>
