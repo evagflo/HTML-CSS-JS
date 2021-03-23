@@ -171,7 +171,37 @@ navbar-brand p span{/*  (STAR)  */
 
 /**** end home page ***/
 
+/**** Menu categories Page ***/
 
+.category-title{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+.category-title span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color:#fff ;
+    opacity: 0.6;
+}
+
+.category-title:hover{
+    box-shadow: 0 1px 5pc 1px #cccccc;
+}
+
+#menu-categories-title + div {
+   margin-bottom: 50px ;
+}
+/**** End Menu Categories page ***/
 
 /**** LARGE DEVICE ONLY***/
 @media (min-width:1200px)
@@ -297,6 +327,18 @@ navbar-brand p span{/*  (STAR)  */
     #menu-tile, #specials-tile {
         width: 280px;
         margin: 0 auto 15px;
+    }
+    /* end home page*/
+
+    /* menu categories page*/
+    .col-xxs-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float:left;
+        width:100%;
+
     }
 
 }
