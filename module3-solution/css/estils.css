@@ -1,0 +1,40 @@
+/* NAVBAR */
+#header-nav, .navbar-brand{
+   
+    background-color: red !important ;
+    color:white !important;
+    font-size: 1.4em;
+
+}
+.icon-bar
+{
+    background-color: red !important;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid purple;
+    background-color:pink !important;
+
+}
+#nav-list a{
+    background-color:#ffff !important;
+    color:red;
+    text-align: center;
+}
+#nav-list a:hover{
+    background-color: pink !important;;
+    color:purple;
+}
+
+/* HEADER */
+.container h1{
+    margin: 0px;
+    color:red;
+    font-size: 2em;
+}
+
+.container .row{
+    margin: 15px;
+    color:black;
+    font-size: 1.2em;
+    background-color: pink;
+}
