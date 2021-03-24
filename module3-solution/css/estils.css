@@ -33,8 +33,26 @@
 }
 
 .container .row{
-    margin: 15px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     color:black;
-    font-size: 1.2em;
-    background-color: pink;
+    /*background-color: salmon;*/
 }
+
+.menu-text{
+    border: 1px dashed black;
+    background-color: pink;
+    margin-bottom: 25px;    
+  }
+
+.title{
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.text{
+    font-size: 1.2em;
+    color:black;
+    padding: 20px;
+}
+
