@@ -6,7 +6,7 @@
 
     //return an http reques object
 
-    function getRequesObject(){
+    function getRequestObject(){
         if (window.XMLHttpRequest){
             return (new XMLHttpRequest());
         }
@@ -22,12 +22,12 @@
 
     // Makes an ajax GET request 'requestUrl'
     ajaxUtils.sendGetRequest =
-    function( requestUrl, responseHandler){
-        var request= getRequesObject();
+    function(requestUrl, responseHandler, isJsonResponse){
+        var request= getRequestObject();
         request.onreadystatechange =
         
         function() {
-            handleResponse(request,responseHandler);
+            handleResponse(request,responseHandler,isJsonResponse);
         };
 
         request.open("GET",requestUrl,true);
@@ -38,12 +38,24 @@
     //function if response is ready
     // and not an error
 
-    function handleResponse(request,responseHandler){
+    function handleResponse(request,responseHandler,isJsonResponse){
         if ((request.readyState  ==4) && (request.status == 200))
         {
             responseHandler(request);
+            //default to is Json Response=true
+            if (isJsonResponse == undefined){
+                isJsonResponse =true;
+                
+            }
+            if(isJsonResponse)
+            {
+                responseHandler(JSON.parse(request.responseText));
+                
+            }
+            else{
+                responseHandler(request.responseText); 
+            }
         }
-
     }
     //expose itulity to the global object
     global.$ajaxUtils = ajaxUtils;
